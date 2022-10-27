@@ -1,5 +1,5 @@
 import './HeroSection.css'
-import { Stack, Grid, createTheme, ThemeProvider } from '@mui/material'
+import { Stack, Grid, createTheme, ThemeProvider, Typography } from '@mui/material'
 import "../App.css";
 import { CustomButton } from './CustomButton';
 
@@ -29,8 +29,12 @@ const HeroSection = () => {
                         <div className="left-side-area">
                             <div className="title_1">
                                 <Stack spacing={2} direction='column'>
-                                    <h1>Always make room for</h1>
-                                    <h1>beauty in your life</h1>
+                                    <Typography variant='h1' gutterBottom>
+                                    Always make room for
+                                    </Typography>
+                                    <Typography variant='h1' gutterBottom>
+                                    beauty in your life
+                                    </Typography>
                                     <p>
                                         At Prague we are passionate about making people feel good while looking their best.
                                         Attending advanced education allows us to keep up with the latest trends and provide
