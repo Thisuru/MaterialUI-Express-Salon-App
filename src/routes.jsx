@@ -16,6 +16,14 @@ const routes = [
     component: Views.HomeView,
   },
 
+  // ---------------Booking---------
+  {
+    path: "/booking",
+    layout: DetailLayout,
+    exact: true,
+    component: Views.BookingView,
+  },
+
   // ---------------ServiceDetails---------
   {
     path: "/serviceDetails/:serviceTypeId",

@@ -55,6 +55,9 @@
 
 .booking-form {
   padding: 100px 200px;
+  height: calc(100vh - 80px) ;
+  width: 100%;
+  object-fit: contain;
 }
 
 .booking-form h3 {
@@ -69,9 +72,9 @@
 }
 
 .booking-form input,
-.booking-form .ant-select-selector,
+.booking-form .MuiSelect-select,
 .booking-form .ant-picker {
-  border: 1.5px solid #a5a5a5 !important;
+  /* border: 1.5px solid #a5a5a5 !important; */
   border-radius: 5px !important;
 }
 
@@ -88,7 +91,7 @@
   padding: 9px 11px !important;
 }
 
-.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+.MuiSelect-select {
   height: 43px !important;
   padding: 5px 11px !important;
 }
