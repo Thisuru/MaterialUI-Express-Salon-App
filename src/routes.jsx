@@ -31,6 +31,14 @@ const routes = [
     exact: true,
     component: Views.ServiceDetailsView,
   },
+
+  // ---------------ThankYouPage---------
+  {
+    path: "/thankyou",
+    layout: DefaultLayout,
+    exact: true,
+    component: Views.ThankYouView,
+  },
 ];
 
 // export default routes;
