@@ -2,6 +2,7 @@ import './HeroSection.css'
 import { Stack, Grid, createTheme, ThemeProvider, Typography } from '@mui/material'
 import "../App.css";
 import { CustomButton } from './CustomButton';
+import { useHistory } from "react-router-dom";
 
 const theme = createTheme({
     palette: {
@@ -21,6 +22,12 @@ const style = {
 }
 
 const HeroSection = () => {
+    const history = useHistory();
+    
+    const bookingNavigateHandler = () => {
+        history.push('/booking')
+    }
+
     return (
         <div className='hero-container'>
             <Stack spacing={4}>
@@ -43,7 +50,7 @@ const HeroSection = () => {
                                     </p>
                                     <ThemeProvider theme={theme}>
                                         <Grid item xl={3}>
-                                            <CustomButton style={style} variant='outlined' size='large'>Booking</CustomButton>
+                                            <CustomButton style={style} variant='outlined' size='large' onClick={bookingNavigateHandler}>Booking</CustomButton>
                                         </Grid>
                                     </ThemeProvider>
                                 </Stack>

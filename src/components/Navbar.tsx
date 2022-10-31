@@ -1,7 +1,7 @@
 import { AppBar, Toolbar, IconButton, Typography, Stack, Button } from '@mui/material'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CustomButton } from './CustomButton';
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const theme = createTheme({
     palette: {
