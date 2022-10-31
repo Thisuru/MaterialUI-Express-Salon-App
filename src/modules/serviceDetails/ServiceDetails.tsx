@@ -4,6 +4,7 @@ import { services } from "../../utils/Constants";
 import { Grid, Typography, Stack } from '@mui/material'
 import { CustomButton } from "../../components/CustomButton";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { useParams, useHistory } from 'react-router-dom';
 
 const theme = createTheme({
   palette: {
@@ -27,6 +28,20 @@ const style1 = {
 }
 
 const ServiceDetails = () => {
+
+  const history = useHistory();
+
+  const params: any = useParams()
+  console.log("params: ", params);
+
+  const makeReserve = () => {
+    history.push('/booking')
+  }
+
+  const serviceID = +params?.serviceTypeId || 1
+  console.log("serviceId: ", serviceID);
+  console.log("services: ", services);
+
   return (
     <Stack className='services-details'>
       <Grid container>
@@ -36,7 +51,7 @@ const ServiceDetails = () => {
               <Typography
                 variant="h1"
                 style={{ color: 'black', lineHeight: '80px' }}>
-                Haircut
+                {services[serviceID - 1]?.name}
               </Typography>
 
               <Stack spacing={4}>
@@ -47,7 +62,7 @@ const ServiceDetails = () => {
                   lineHeight='150%'
                   style={{ color: "black" }}
                 >
-                  {services[0]?.description}
+                  {services[serviceID - 1]?.description} 
                 </Typography>
 
                 <ThemeProvider theme={theme}>
@@ -55,6 +70,7 @@ const ServiceDetails = () => {
                     variant='contained'
                     size='large'
                     style={style1}
+                    onClick={makeReserve}
                   >
                     Make a Reservation
                   </CustomButton>
