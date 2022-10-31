@@ -19,7 +19,30 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
+import { CustomButton } from '../../components/CustomButton';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: '#B99A5F',
+        },
+    },
+});
+
+const style = {
+    background: '#b99a5f',
+    border: '1px solid #b99a5f',
+    paddingLeft: '40px',
+    paddingRight: '40px',
+    color: '#FFFFFF',
+    textTransform: 'capitalize',
+    fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    fontWeight: '400',
+    fontSize: '14px',
+    lineHeight: '150%'
+}
 
 const validationSchema = yup.object({
     firstname: yup
@@ -118,7 +141,7 @@ export const Booking = () => {
                                             <FormControl fullWidth>
                                                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                                                     <DesktopDatePicker
-                                                        label="Date desktop"
+                                                        label="Date"
                                                         inputFormat="MM/DD/YYYY"
                                                         value={value}
                                                         onChange={handleChange}
@@ -142,13 +165,31 @@ export const Booking = () => {
                                         </Grid>
                                     </Grid>
 
-                                    <Button
+                                    <div className='total'>
+                                        <h3>Total: USD 25.00</h3>
+                                    </div>
+
+                                    <Grid container>
+                                        <Grid item xs={6}>
+                                            <ThemeProvider theme={theme}>
+                                                <CustomButton
+                                                    variant='contained'
+                                                    size='large'
+                                                    style={style}
+                                                >
+                                                    Pay Now
+                                                </CustomButton>
+                                            </ThemeProvider>
+                                        </Grid>
+                                    </Grid>
+
+                                    {/* <Button
                                         color="primary"
                                         variant="contained"
                                         fullWidth
                                         type="submit">
                                         <b>Submit</b>
-                                    </Button>
+                                    </Button> */}
                                 </Stack>
                             </Box>
                         </form>
