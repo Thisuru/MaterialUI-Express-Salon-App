@@ -8,20 +8,30 @@ const theme = createTheme({
             main: '#f6f5f2',
         },
     },
+    components: {
+        MuiButton: {
+            styleOverrides: {
+                text: {
+                    background: '#f6f5f2',
+                    color: '#b99a5f',
+                    borderRadius: '5px',
+                    border: '1px solid transparent',
+                    fontWeight: '400',
+                    fontSize: '14px',
+                    lineHeight: '150%',
+                    width: '180px',
+                    height: '39px',
+                    "&:hover": {
+                        transition: 'all 0.3s ease- out',
+                        background: '#b99a5f',
+                        border: '1px solid #b99a5f',
+                        color: '#2b2b2b',
+                    },
+                }
+            }
+        }
+    }
 });
-
-
-const style = {
-    background: '#f6f5f2',
-    color: '#b99a5f',
-    borderRadius: '5px',
-    border: '1px solid transparent',
-    fontWeight: '400',
-    fontSize: '14px',
-    lineHeight: '150%',
-    width: '180px',
-    height: '39px'
-}
 
 function CardItem(props: any) {
     return (
@@ -41,7 +51,7 @@ function CardItem(props: any) {
 
                         <ThemeProvider theme={theme}>
                             <CustomButton
-                                style={style}
+                                variant='text'
                                 onClick={() => console.log("clicked")}>
                                 MAKE A RESERVATION
                             </CustomButton>
