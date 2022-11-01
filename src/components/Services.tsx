@@ -68,7 +68,7 @@ function Services() {
                 <CardItem
                   src="images/img_svs_1.svg"
                   title="Haircut"
-                  text="Lorem ipsum dolor sit amet, conse adipiscing incididunt ut Haircut."
+                  text="Lorem ipsum dolor sit amet, conse adipiscing elit, sed do eiusmod tempor incididunt ut. Haircut."
                   label="Haircut"
                   path="/serviceDetails/1"
                 />
@@ -79,7 +79,7 @@ function Services() {
               <CardItem
                 src="images/img_svs_2.svg"
                 title="Hair Styling"
-                text="Lorem ipsum dolor sit amet, conse adipiscing incididunt ut Hair Styling."
+                text="Lorem ipsum dolor sit amet, conse adipiscing elit, sed do eiusmod tempor incididunt ut. Hair Styling."
                 label="Styling"
                 path="/serviceDetails/2"
               />
@@ -90,7 +90,7 @@ function Services() {
               <CardItem
                 src="images/img_svs_3.svg"
                 title="Makeup"
-                text="Lorem ipsum dolor sit amet, conse adipiscing incididunt ut Makeup."
+                text="Lorem ipsum dolor sit amet, conse adipiscing elit, sed do eiusmod tempor incididunt ut. Makeup."
                 label="Makeup"
                 path="/serviceDetails/3"
               />
@@ -101,7 +101,7 @@ function Services() {
               <CardItem
                 src="images/img_svs_1.svg"
                 title="Haircut"
-                text="Lorem ipsum dolor sit amet, conse adipiscing incididunt ut Haircut."
+                text="Lorem ipsum dolor sit amet, conse adipiscing elit, sed do eiusmod tempor incididunt ut. Haircut."
                 label="Haircut"
                 path="/serviceDetails/1"
               />
@@ -112,7 +112,7 @@ function Services() {
               <CardItem
                 src="images/img_svs_2.svg"
                 title="Hair Styling"
-                text="Lorem ipsum dolor sit amet, conse adipiscing incididunt ut Hair Styling."
+                text="Lorem ipsum dolor sit amet, conse adipiscing elit, sed do eiusmod tempor incididunt ut. Hair Styling."
                 label="Styling"
                 path="/serviceDetails/2"
               />
@@ -123,7 +123,7 @@ function Services() {
               <CardItem
                 src="images/img_svs_3.svg"
                 title="Makeup"
-                text="Lorem ipsum dolor sit amet, conse adipiscing incididunt ut Makeup."
+                text="Lorem ipsum dolor sit amet, conse adipiscing elit, sed do eiusmod tempor incididunt ut. Makeup."
                 label="Makeup"
                 path="/serviceDetails/3"
               />

@@ -117,3 +117,13 @@
 /* .slick-arrow.slick-hidden {
     display: none;
 } */
+
+/* .slick-arrow.slick-prev {
+    background-color: red;
+    color: red;
+} */
+
+.slick-prev:before,
+.slick-next:before {
+  color: black!important;
+}

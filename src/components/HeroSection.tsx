@@ -37,10 +37,10 @@ const HeroSection = () => {
                             <div className="title_1">
                                 <Stack spacing={2} direction='column'>
                                     <Typography variant='h1' gutterBottom>
-                                        Always make room for
+                                        Always make room
                                     </Typography>
                                     <Typography variant='h1' gutterBottom>
-                                        beauty in your life
+                                        for beauty in your life
                                     </Typography>
                                     <Stack spacing={4}>
                                         <p>
