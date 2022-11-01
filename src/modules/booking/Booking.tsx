@@ -96,9 +96,9 @@ export const Booking = () => {
                                         id="demo-simple-select"
                                         label="Age"
                                     >
-                                        <MenuItem value={10}>Ten</MenuItem>
-                                        <MenuItem value={20}>Twenty</MenuItem>
-                                        <MenuItem value={30}>Thirty</MenuItem>
+                                        <MenuItem value={20}>Haircut</MenuItem>
+                                        <MenuItem value={25}>Hair Styling</MenuItem>
+                                        <MenuItem value={30}>Makeup</MenuItem>
                                     </Select>
                                     <TextField
                                         fullWidth
