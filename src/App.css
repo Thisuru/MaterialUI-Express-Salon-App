@@ -54,7 +54,8 @@
 .booking-form {
   padding: 100px 200px;
   /* formobile use height: 100%*/
-  height: calc(100vh - 80px) ;
+  /* for monitor use calc(100vh - 80px) */
+  height: 100%;
   width: 100%;
   object-fit: contain;
 }

@@ -23,7 +23,7 @@ const style = {
 
 const HeroSection = () => {
     const history = useHistory();
-    
+
     const bookingNavigateHandler = () => {
         history.push('/booking')
     }
@@ -37,22 +37,24 @@ const HeroSection = () => {
                             <div className="title_1">
                                 <Stack spacing={2} direction='column'>
                                     <Typography variant='h1' gutterBottom>
-                                    Always make room for
+                                        Always make room for
                                     </Typography>
                                     <Typography variant='h1' gutterBottom>
-                                    beauty in your life
+                                        beauty in your life
                                     </Typography>
-                                    <p>
-                                        At Prague we are passionate about making people feel good while looking their best.
-                                        Attending advanced education allows us to keep up with the latest trends and provide
-                                        each guest with a unique & customizable result. For your convenience, Schedule your
-                                        reservation today!
-                                    </p>
-                                    <ThemeProvider theme={theme}>
-                                        <Grid item xl={3}>
-                                            <CustomButton style={style} variant='outlined' size='large' onClick={bookingNavigateHandler}>Booking</CustomButton>
-                                        </Grid>
-                                    </ThemeProvider>
+                                    <Stack spacing={4}>
+                                        <p>
+                                            At Prague we are passionate about making people feel good while looking their best.
+                                            Attending advanced education allows us to keep up with the latest trends and provide
+                                            each guest with a unique & customizable result. For your convenience, Schedule your
+                                            reservation today!
+                                        </p>
+                                        <ThemeProvider theme={theme}>
+                                            <Grid item xl={3}>
+                                                <CustomButton style={style} variant='outlined' size='large' onClick={bookingNavigateHandler}>Booking</CustomButton>
+                                            </Grid>
+                                        </ThemeProvider>
+                                    </Stack>
                                 </Stack>
                             </div>
                         </div>
